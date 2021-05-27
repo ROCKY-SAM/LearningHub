@@ -3,6 +3,12 @@
 # Blogs
 > - https://neelbhatt.com/category/net-core/
 > - https://www.toptal.com/developers/blog
+> - https://engineering.fb.com/
+> - https://dev.to/
+> - https://cloudemployee.co.uk/blog/
+> - https://www.geeksforgeeks.org/
+> - https://stackoverflow.blog/
+> 
 
 # Architecture
 > https://codewithmukesh.com/blog/onion-architecture-in-aspnet-core/
