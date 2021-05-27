@@ -1,5 +1,7 @@
 # LearningHub
 
+# Blogs
+https://neelbhatt.com/category/net-core/
 # Architecture
 https://codewithmukesh.com/blog/onion-architecture-in-aspnet-core/
 
