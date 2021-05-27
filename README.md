@@ -2,6 +2,8 @@
 
 # Blogs
 https://neelbhatt.com/category/net-core/
+https://www.toptal.com/developers/blog
+
 # Architecture
 https://codewithmukesh.com/blog/onion-architecture-in-aspnet-core/
 
