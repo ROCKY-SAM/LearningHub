@@ -30,3 +30,44 @@
 
 # Single-responsibility principle (SRP)
 > The single-responsibility principle (SRP) is a computer-programming principle that states that every module, class or function in a computer program should have responsibility over a single part of that program's functionality, and it should encapsulate that part. All of that module, class or function's services should be narrowly aligned with that responsibility.
+
+
+# TypeScript complain “has no initializer and is not definitely assigned in the constructor” about constructors by returning constructed object
+```
+strictPropertyInitialization forces you to initialize all properties that are not optional in the constructor of the class. This check can be useful as it ensures that you don't get unexpected uninitialized properties. There are several ways to get around the error, the first two are the general way to do it, in your case only the last on applies (I include all for completeness):
+
+Initialize the field
+
+If you define the property as boolean if should be true or false initialize it when you declare the field or initialize it in the constructor:
+
+class MyClass {
+  someField: boolean = false;
+  constructor() {
+    return { someField: true };
+  }
+}
+
+Make the field optional
+
+If the field can be undefined, you should mark this in the field declaration either by using ? or typing the field as undefined|boolean
+
+class MyClass {
+    //someField?: boolean;
+    someField: boolean | undefined;
+    constructor() {
+        return { someField: true };
+    }
+}
+
+Use a not null assertion
+
+In your case since in the constructor you are actually not initializing the current object (this) but returning a new one, you can tell the compiler it is wrong about the error and use a not null assertion. This assertion is specifically introduced because there are limitations in strictPropertyInitialization checks and sometimes the compiler gets it wrong. For those cases you can override what the compiler thinks, but you have to be explicit about it:
+
+class MyClass {
+    someField!: boolean;
+    constructor() {
+        return { someField: true };
+    }
+}
+```
+
