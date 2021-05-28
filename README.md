@@ -61,7 +61,7 @@ class MyClass {
 ```
 Use a not null assertion
 
-In your case since in the constructor you are actually not initializing the current object (this) but returning a new one, you can tell the compiler it is wrong about the error and use a not null assertion. This assertion is specifically introduced because there are limitations in strictPropertyInitialization checks and sometimes the compiler gets it wrong. For those cases you can override what the compiler thinks, but you have to be explicit about it:
+> In your case since in the constructor you are actually not initializing the current object (this) but returning a new one, you can tell the compiler it is wrong about the error and use a not null assertion. This assertion is specifically introduced because there are limitations in strictPropertyInitialization checks and sometimes the compiler gets it wrong. For those cases you can override what the compiler thinks, but you have to be explicit about it:
 ```
 class MyClass {
     someField!: boolean;
