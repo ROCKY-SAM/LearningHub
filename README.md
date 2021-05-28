@@ -23,6 +23,7 @@
 > - https://coryrylan.com/blog/angular-form-builder-and-validation-management
 > - https://www.tutsmake.com/
 > - https://github.com/Procaseycash/ng-pure-datatable
+> - http://jsfiddle.net/gavinfoley/fR32K/
 
 
 # Single-responsibility principle (SRP)
