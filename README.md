@@ -97,6 +97,9 @@ applyFilterGlobal($event: any, stringVal: any) {
   }
 ```
 if you get error for dt add below line\
-```@ViewChild('dt') dt: Table | undefined;```
+```
+import { ViewChild } from '@angular/core';
+import  {Table} from 'primeng/table';
+@ViewChild('dt') dt: Table | undefined;```
 
 
