@@ -86,4 +86,17 @@ Now Push to remote\
 ```$git push ```\- - - - >Push the changes to the upstream\
 
 
+# primeNG
+Question : PrimeNG Table filterGlobal TS2339: Property 'value' does not exist on type 'EventTarget'\
+Answer : Your HTML input should be like this\
+```<input pInputText type="text" (input)="applyFilterGlobal($event, 'contains')" placeholder="Filter" />```
+and in your TS do this\
+```
+applyFilterGlobal($event: any, stringVal: any) {
+    this.dt!.filterGlobal(($event.target as HTMLInputElement).value, 'contains');
+  }
+```
+if you get error for dt add below line\
+```@ViewChild('dt') dt: Table | undefined;```
+
 
