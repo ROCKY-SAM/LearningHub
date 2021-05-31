@@ -100,6 +100,7 @@ if you get error for dt add below line\
 ```
 import { ViewChild } from '@angular/core';
 import  {Table} from 'primeng/table';
-@ViewChild('dt') dt: Table | undefined;```
+@ViewChild('dt') dt: Table | undefined;
+```
 
 
