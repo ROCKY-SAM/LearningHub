@@ -71,35 +71,20 @@ class MyClass {
 }
 ```
 
+Creating local repository:-
+Initially user may have created the local git repository.
+```$ git init``` :- This will make the local folder as Git repository,
+Link the remote branch:-
+Now challenge is associate the local git repository with remote master branch.
+```$ git remote add RepoName RepoURL```
+usage: git remote add []
+Test the Remote
+```$ git remote show``` --->Display the remote name
+```$ git remote -v``` --->Display the remote branches
+Now Push to remote
+```$git add . ```----> Add all the files and folder as git staged'
+```$git commit -m "Your Commit Message" ```- - - >Commit the message
+```$git push ```- - - - >Push the changes to the upstream
 
 
-    Creating local repository:-
-
-    Initially user may have created the local git repository.
-
-    ```$ git init``` :- This will make the local folder as Git repository,
-
-    Link the remote branch:-
-
-    Now challenge is associate the local git repository with remote master branch.
-
-    ```$ git remote add RepoName RepoURL```
-
-    usage: git remote add []
-
-    Test the Remote
-
-    ```$ git remote show``` --->Display the remote name
-
-    ```$ git remote -v``` --->Display the remote branches
-
-    Now Push to remote
-
-    ```$git add . ```----> Add all the files and folder as git staged'
-
-    ```$git commit -m "Your Commit Message" ```- - - >Commit the message
-
-    ```$git push ```- - - - >Push the changes to the upstream
-
-```
 
