@@ -102,5 +102,6 @@ import { ViewChild } from '@angular/core';
 import  {Table} from 'primeng/table';
 @ViewChild('dt') dt: Table | undefined;
 ```
+![image](https://user-images.githubusercontent.com/12700182/120366535-6461ae80-c32d-11eb-8f47-3f601f06e91c.png)
 
 
