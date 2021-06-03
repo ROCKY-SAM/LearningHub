@@ -25,7 +25,9 @@
 > - https://github.com/Procaseycash/ng-pure-datatable
 > - http://jsfiddle.net/gavinfoley/fR32K/
 > - https://nehalist.io/working-with-models-in-angular/ 
-
+> - https://stackblitz.com/angular/jaamvvovxlme?file=angular.json
+> - https://angular.io/guide/i18n
+> - https://stackblitz.com/angular/aqnrddojgan?file=src%2Fapp%2Fhero-detail%2Fhero-detail.component.ts
 
 
 # Single-responsibility principle (SRP)
