@@ -104,4 +104,5 @@ import  {Table} from 'primeng/table';
 ```
 ![image](https://user-images.githubusercontent.com/12700182/120366535-6461ae80-c32d-11eb-8f47-3f601f06e91c.png)
 
+![image](https://user-images.githubusercontent.com/12700182/120595693-709a5880-c460-11eb-84bb-7e794b5a3a31.png)
 
