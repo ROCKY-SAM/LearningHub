@@ -8,6 +8,7 @@
 > - https://cloudemployee.co.uk/blog/
 > - https://www.geeksforgeeks.org/
 > - https://stackoverflow.blog/
+> - https://www.adjust.com/blog/universal-links-vs-deep-links/
 > 
 
 # Architecture
