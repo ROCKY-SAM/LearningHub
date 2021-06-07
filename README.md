@@ -109,3 +109,10 @@ import  {Table} from 'primeng/table';
 
 ![image](https://user-images.githubusercontent.com/12700182/120595693-709a5880-c460-11eb-84bb-7e794b5a3a31.png)
 
+<a href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens" rel="noreferrer">GitLens</a> &amp; 
+<a href="https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph" rel="noreferrer">GitGraph</a>
+Below snapshot highlights how gitlens is showing commit over time
+![image](https://user-images.githubusercontent.com/12700182/120990249-fa6a5e80-c79d-11eb-813b-105ad12c5903.png)
+And the below picture is for the the amazing vivid GitGraph
+![image](https://user-images.githubusercontent.com/12700182/120990264-ffc7a900-c79d-11eb-87c2-e22022203c24.png)
+
