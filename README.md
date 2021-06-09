@@ -116,3 +116,6 @@ Below snapshot highlights how gitlens is showing commit over time
 And the below picture is for the the amazing vivid GitGraph
 ![image](https://user-images.githubusercontent.com/12700182/120990264-ffc7a900-c79d-11eb-87c2-e22022203c24.png)
 
+
+![image](https://user-images.githubusercontent.com/12700182/121293564-759c5380-c909-11eb-8160-1038f1926e48.png)
+
