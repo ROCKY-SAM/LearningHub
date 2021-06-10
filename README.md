@@ -120,7 +120,7 @@ And the below picture is for the the amazing vivid GitGraph
 ![image](https://user-images.githubusercontent.com/12700182/121293564-759c5380-c909-11eb-8160-1038f1926e48.png)
 
 # Angular 10 - Fix CommonJS or AMD dependencies can cause optimization bailouts
-- When you use a dependency that is packaged with CommonJS, it can result in larger slower applications
+>  When you use a dependency that is packaged with CommonJS, it can result in larger slower applications
 
 Starting with version 10, Angular now warns you when your build pulls in one of these bundles. If you’ve started seeing these warnings for your dependencies, let your dependency know that you’d prefer an ECMAScript module (ESM) bundle.
 
