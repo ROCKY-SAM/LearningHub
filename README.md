@@ -79,7 +79,7 @@ Initially user may have created the local git repository.\
 ```sh $ git init```
 - This will make the local folder as Git repository,Link the remote branch:- Now challenge is associate the local git repository with remote master branch.\
 ```sh $ git remote add RepoName RepoURL```
-- usage: git remote add []\
+usage: git remote add []\
 - Test the Remote\
 ```sh $ git remote show``` --->Display the remote name\
 ```sh $ git remote -v``` --->Display the remote branches\
