@@ -73,7 +73,7 @@ class MyClass {
     }
 }
 ```
-
+```sh
 Creating local repository:-\
 Initially user may have created the local git repository.\
 ```$ git init```\
@@ -87,7 +87,7 @@ Now Push to remote\
 ```$git add . ```\----> Add all the files and folder as git staged\
 ```$git commit -m "Your Commit Message" ```\- - - >Commit the message\
 ```$git push ```\- - - - >Push the changes to the upstream\
-
+```
 
 # primeNG
 Question : PrimeNG Table filterGlobal TS2339: Property 'value' does not exist on type 'EventTarget'\
