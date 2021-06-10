@@ -73,21 +73,21 @@ class MyClass {
     }
 }
 ```
-```sh
-Creating local repository:-\
+
+# Creating local repository: 
 Initially user may have created the local git repository.\
-$ git init\
-This will make the local folder as Git repository,Link the remote branch:- Now challenge is associate the local git repository with remote master branch.\
-$ git remote add RepoName RepoURL\
-usage: git remote add []\
-Test the Remote\
-$ git remote show\ --->Display the remote name\
-$ git remote -v\ --->Display the remote branches\
-Now Push to remote\
-$git add . \----> Add all the files and folder as git staged\
-$git commit -m "Your Commit Message" \- - - >Commit the message\
-$git push \- - - - >Push the changes to the upstream\
-```
+```sh $ git init```
+- This will make the local folder as Git repository,Link the remote branch:- Now challenge is associate the local git repository with remote master branch.\
+```sh $ git remote add RepoName RepoURL```
+- usage: git remote add []\
+- Test the Remote\
+```sh $ git remote show``` --->Display the remote name\
+```sh $ git remote -v``` --->Display the remote branches\
+- Now Push to remote\
+```sh $git add . ```----> Add all the files and folder as git staged\
+```sh $git commit -m "Your Commit Message" ```- - - >Commit the message\
+```sh $git push ```- - - - >Push the changes to the upstream\
+
 
 # primeNG
 Question : PrimeNG Table filterGlobal TS2339: Property 'value' does not exist on type 'EventTarget'\
