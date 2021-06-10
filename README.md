@@ -128,7 +128,8 @@ In your angular.json file look for the build object and add
 
 as shown below -
 
-```"build": {
+```
+"build": {
   "builder": "@angular-devkit/build-angular:browser",
   "options": {
      "allowedCommonJsDependencies": [
@@ -138,5 +139,37 @@ as shown below -
      ...
    }
    ...
-},```
+},
+```
 
+# Angular image src as function return
+TS:
+```  
+    getImage(id){
+        return http.get(url/id);
+    }
+```
+HTML:
+```
+<img [src]="getImage(user.profileImageId)" />
+```
+# BASE64 to image angular
+
+> Import DomSanitizer:
+```
+import { DomSanitizer } from '@angular/platform-browser';
+```
+> define in constructor:
+```constructor(private _sanitizer: DomSanitizer) { }
+```
+> Sanitize the Base64 string you want to pass as your image source (use trustResourceUrl):
+
+```
+this.imagePath = this._sanitizer.bypassSecurityTrustResourceUrl('data:image/jpg;base64,' 
+                 + toReturnImage.base64string);
+```
+> Bind to html:
+
+```
+<img [src]="imagePath">
+```
