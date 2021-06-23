@@ -174,3 +174,25 @@ this.imagePath = this._sanitizer.bypassSecurityTrustResourceUrl('data:image/jpg;
 ```
 <img [src]="imagePath">
 ```
+
+# Angular FormGroup reset doesn't reset validators
+
+It (FormGroup) behaves correctly. Your form requires username and password, thus when you reset the form it should be invalid (i.e. form with no username/password is not valid).
+
+If I understand correctly, your issue here is why the red errors are not there at the first time you load the page (where the form is ALSO invalid) but pop up when you click the button. This issue is particularly prominent when you're using Material.
+
+AFAIK, <mat-error> check the validity of FormGroupDirective, not FormGroup, and resetting FormGroup does not reset FormGroupDirective. It's a bit inconvenient, but to clear <mat-error> you would need to reset FormGroupDirective as well.
+
+To do that, in your template, define a variable as such:
+```
+<form [formGroup]="myForm" #formDirective="ngForm" 
+  (ngSubmit)="submitForm(myForm, formDirective)">
+And in your component class, call formDirective.resetForm():
+
+private submitForm(formData: any, formDirective: FormGroupDirective): void {
+    formDirective.resetForm();
+    this.myForm.reset();
+}
+  
+GitHub issue: https://github.com/angular/material2/issues/4190
+```
