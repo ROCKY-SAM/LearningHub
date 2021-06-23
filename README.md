@@ -193,6 +193,6 @@ private submitForm(formData: any, formDirective: FormGroupDirective): void {
     formDirective.resetForm();
     this.myForm.reset();
 }
-  
-GitHub issue: https://github.com/angular/material2/issues/4190
 ```
+> GitHub issue: https://github.com/angular/material2/issues/4190
+
