@@ -174,7 +174,7 @@ this.imagePath = this._sanitizer.bypassSecurityTrustResourceUrl('data:image/jpg;
 ```
 <img [src]="imagePath">
 ```
-
+# 
 # Angular FormGroup reset doesn't reset validators
 
 It (FormGroup) behaves correctly. Your form requires username and password, thus when you reset the form it should be invalid (i.e. form with no username/password is not valid).
