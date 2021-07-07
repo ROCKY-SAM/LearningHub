@@ -200,9 +200,9 @@ private submitForm(formData: any, formDirective: FormGroupDirective): void {
 > GitHub issue: https://github.com/angular/material2/issues/4190
 
   
-```
-Update a user
 
+#Update a user
+```
 var url = "http://localhost:8080/api/v1/users";
 
 var data = {};
@@ -222,8 +222,9 @@ xhr.onload = function () {
     }
 }
 xhr.send(json);
-Delete a user
-
+  ```
+#Delete a user
+```
 var url = "http://localhost:8080/api/v1/users";
 var xhr = new XMLHttpRequest();
 
