@@ -201,7 +201,7 @@ private submitForm(formData: any, formDirective: FormGroupDirective): void {
 
   
 
-#Update a user
+# Update a user
 ```
 var url = "http://localhost:8080/api/v1/users";
 
@@ -222,8 +222,8 @@ xhr.onload = function () {
     }
 }
 xhr.send(json);
-  ```
-#Delete a user
+ ```
+# Delete a user
 ```
 var url = "http://localhost:8080/api/v1/users";
 var xhr = new XMLHttpRequest();
