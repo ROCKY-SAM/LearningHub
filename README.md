@@ -33,6 +33,7 @@
 > - https://stackoverflow.com/questions/28339838/how-to-define-different-fonts-for-different-language-using-angularjs-i18n
 > - https://www.concretepage.com/angular/angular-formgroup-addcontrol-removecontrol
 > - https://medium.com/angular-shots/shot-3-how-to-add-http-headers-to-every-request-in-angular-fab3d10edc26
+> - https://dzone.com/articles/how-to-use-async-pipe-in-angular-8
 > 
 
 # Single-responsibility principle (SRP)
