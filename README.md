@@ -240,3 +240,9 @@ xhr.onload = function () {
 }
 xhr.send(null);
   ```
+
+# Azure DevOps: Resolving 'Conflict Prevents Automatic Merging'
+> https://www.shawnmcgough.com/conflict-prevents-automatic-merging/
+  
+What Is ADA Compliance? (And What Does ADA Compliance Mean for Your Website?)
+> https://www.webfx.com/blog/marketing/what-is-ada-compliance/
