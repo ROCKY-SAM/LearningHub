@@ -247,3 +247,6 @@ xhr.send(null);
   
 # What Is ADA Compliance? (And What Does ADA Compliance Mean for Your Website?)
 > https://www.webfx.com/blog/marketing/what-is-ada-compliance/
+ 
+# dynamic var in i18n message
+![image](https://user-images.githubusercontent.com/12700182/126354354-77000187-a7a9-4eef-9baf-98517817113b.png)
