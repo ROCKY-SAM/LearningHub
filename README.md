@@ -36,6 +36,7 @@
 > - https://dzone.com/articles/how-to-use-async-pipe-in-angular-8
 > - https://github.com/bootsoon/ng-circle-progress
 > - https://stackblitz.com/edit/ng-circle-progress-demo?file=src%2Fapp%2Fapp.component.html
+> - https://malcoded.com/posts/angular-i18n/
 
 # Single-responsibility principle (SRP)
 > The single-responsibility principle (SRP) is a computer-programming principle that states that every module, class or function in a computer program should have responsibility over a single part of that program's functionality, and it should encapsulate that part. All of that module, class or function's services should be narrowly aligned with that responsibility.
