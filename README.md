@@ -251,3 +251,6 @@ xhr.send(null);
  
 # dynamic var in i18n message
 ![image](https://user-images.githubusercontent.com/12700182/126354354-77000187-a7a9-4eef-9baf-98517817113b.png)
+
+# Full calendar buttonText on 'today' view not updating
+> https://stackoverflow.com/questions/56941545/buttontext-on-today-view-not-updating
