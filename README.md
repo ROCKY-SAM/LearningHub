@@ -255,3 +255,5 @@ xhr.send(null);
 
 # Full calendar buttonText on 'today' view not updating
 > https://stackoverflow.com/questions/56941545/buttontext-on-today-view-not-updating
+
+  ![image](https://user-images.githubusercontent.com/12700182/127805137-3ee13816-b236-4e06-a795-7f45848635b5.png)
