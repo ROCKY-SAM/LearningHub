@@ -12,7 +12,7 @@
 
 # CICD 
 ``` Building and Deploying your Code with Azure Pipelines
-> - https://www.youtube.com/watch?v=NuYDAs3kNV8 ``` 
+> - https://www.youtube.com/watch?v=NuYDAs3kNV8``` 
 
 # Architecture
 > - https://codewithmukesh.com/blog/onion-architecture-in-aspnet-core/
