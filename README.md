@@ -9,7 +9,10 @@
 > - https://www.geeksforgeeks.org/
 > - https://stackoverflow.blog/
 > - https://www.adjust.com/blog/universal-links-vs-deep-links/
-> 
+
+# CICD 
+``` Building and Deploying your Code with Azure Pipelines
+> - https://www.youtube.com/watch?v=NuYDAs3kNV8 ``` 
 
 # Architecture
 > - https://codewithmukesh.com/blog/onion-architecture-in-aspnet-core/
