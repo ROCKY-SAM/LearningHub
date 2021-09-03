@@ -13,6 +13,8 @@
 # CICD 
 Building and Deploying your Code with Azure Pipelines
 > - https://www.youtube.com/watch?v=NuYDAs3kNV8
+> - https://docs.microsoft.com/en-us/azure/devops-project/azure-devops-project-aspnet-core
+> 
 
 # Architecture
 > - https://codewithmukesh.com/blog/onion-architecture-in-aspnet-core/
@@ -23,7 +25,14 @@ Building and Deploying your Code with Azure Pipelines
 # GIT
 > - https://www.gitkraken.com/learn/git/best-practices/git-branch-strategy
 
+# .NET
+> - https://www.tutorialsteacher.com/core/aspnet-core-introduction
+> - https://www.sam-solutions.com/blog/building-microservice-with-onion-architecture/
+> - https://www.lambdatest.com/blog/comprehensive-guide-to-javascript-design-patterns/
+
 # Angular
+> - https://www.tektutorialshub.com/angular-tutorial/
+> - https://dev.to/bespoyasov/clean-architecture-on-frontend-4311
 > - https://coryrylan.com/blog/angular-form-builder-and-validation-management
 > - https://www.tutsmake.com/
 > - https://github.com/Procaseycash/ng-pure-datatable
@@ -44,7 +53,10 @@ Building and Deploying your Code with Azure Pipelines
 > - https://www.thirdrocktechkno.com/blog/how-to-implement-localization-in-angular-10/
 > - https://pkief.medium.com/angular-desktop-apps-a9ce9e3574e8
 > - https://www.logicflow.ai/blog/params/post/2543411/
-> - 
+> - https://www.geeksforgeeks.org/whats-the-difference-between-ng-pristine-and-ng-dirty-in-angularjs/
+> 
+
+# https://www.codecademy.com/learn/introduction-to-javascript/modules/learn-javascript-introduction
 
 # Single-responsibility principle (SRP)
 > The single-responsibility principle (SRP) is a computer-programming principle that states that every module, class or function in a computer program should have responsibility over a single part of that program's functionality, and it should encapsulate that part. All of that module, class or function's services should be narrowly aligned with that responsibility.
