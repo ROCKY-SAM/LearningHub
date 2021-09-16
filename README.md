@@ -276,3 +276,29 @@ xhr.send(null);
 > https://stackoverflow.com/questions/56941545/buttontext-on-today-view-not-updating
 
   ![image](https://user-images.githubusercontent.com/12700182/127805137-3ee13816-b236-4e06-a795-7f45848635b5.png)
+  
+```
+  //Inhertiance example
+class person{
+    constructor(name,job){
+        this.name = name;
+        this.job =job;
+    }
+    //method to return the string
+    toString(){
+        return (`Name of person: ${this.name}  --job ${this.job}`   );
+    }
+}
+class student extends person{
+    constructor(name,job,id){
+        //super keyword to for calling above class constructor
+        super(name,job);
+        this.id = id;
+    }
+    toString(){
+        return (`${super.toString()},Student ID: ${this.id}`);
+    }
+}
+let student1 = new student('Sameera','developer',22);
+console.log(student1.toString());
+```  
