@@ -36,6 +36,7 @@ React compared the root DOM Elements Types.
 * Elements of different types: Whenever the root elements have different types, React will tear down the old tree and build the new tree from scratch. Going from <a> to <img>, or from <Article> to <Comment>, or from <Button> to <div> — any of those will lead to a full rebuild. This will lead to component unmount and mount lifecycle calls too.
 * DOM Elements Of The Same Type: When comparing two React DOM elements of the same type, React looks at the attributes of both, keeps the same underlying DOM node, and only updates the changed attributes.After handling the DOM node, React then recurses on the children. This will lead to component update lifecycle calls.
 
+> A declarative style, like what react has, allows you to control flow and state in your application by saying "It should look like this". An imperative style turns that around and allows you to control your application by saying "This is what you should do".
 
 ## Recommended way to structure React projects?
 
