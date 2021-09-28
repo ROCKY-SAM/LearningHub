@@ -1,5 +1,12 @@
 # LearningHub
 
+# Next to watch
+> - https://www.tatvasoft.com/blog/reactjs-best-practices/amp/
+> - https://www.edureka.co/blog/interview-questions/react-interview-questions/amp/
+> - https://www.coursedio.com/course/react-software-architecture/next-steps
+> - https://www.youtube.com/watch?v=NsKBZuagLcg&t=1290s
+> 
+
 # Blogs
 > - https://neelbhatt.com/category/net-core/
 > - https://www.toptal.com/developers/blog
