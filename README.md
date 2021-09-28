@@ -215,9 +215,9 @@ console.log(student1.toString());
   ```
 
 
-The “fatal: refusing to merge unrelated histories” Git error occurs when two unrelated projects are merged (i.e., projects that are not aware of each other’s existence and have mismatching commit histories).
+# The “fatal: refusing to merge unrelated histories” Git error occurs when two unrelated projects are merged (i.e., projects that are not aware of each other’s existence and have mismatching commit histories).
 
-svg viewer
+![image](https://user-images.githubusercontent.com/12700182/135134523-11f22411-7926-4cdd-8bae-b125cb749a78.png)
 Consider the following two cases that throw this error:
 
 You have cloned a project and, somehow, the .git directory got deleted or corrupted. This leads Git to be unaware of your local history and will, therefore, cause it to throw this error when you try to push to or pull from the remote repository.
