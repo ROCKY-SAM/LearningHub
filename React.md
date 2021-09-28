@@ -1,6 +1,6 @@
 # packages
 > - https://styled-components.com
-> -
+> - https://create-react-app.dev/docs/adding-a-css-modules-stylesheet/
 
 > - https://medium.com/devinder/react-virtual-dom-vs-real-dom-23749ff7adc9
 
