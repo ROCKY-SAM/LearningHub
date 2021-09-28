@@ -113,3 +113,6 @@ const element = React.createElement(
 };
   ```
 >These objects are called “React elements”. You can think of them as descriptions of what you want to see on the screen. React reads these objects and uses them to construct the DOM and keep it up to date.
+  
+Dynamic styling 
+  ``` <div className={`form-control ${!isValid ? 'invalid':''}`}> ```
