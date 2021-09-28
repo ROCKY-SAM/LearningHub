@@ -118,4 +118,26 @@ const element = React.createElement(
 >These objects are called “React elements”. You can think of them as descriptions of what you want to see on the screen. React reads these objects and uses them to construct the DOM and keep it up to date.
   
 Dynamic styling 
-  ``` <div className={`form-control ${!isValid ? 'invalid':''}`}> ```
+  ``` <div className={`form-control ${!isValid ? 'invalid':''}`}> 
+  
+  & input {
+  display: block;
+  width: 100%;
+  border: 1px solid ${props => props.invalid ? 'red':'#ccc'};
+  font: inherit;
+  line-height: 1.5rem;
+  padding: 0 0.25rem;
+}
+  
+  
+  import styles from './Button.module.css';
+
+const Button = props => {
+  return (
+    <button type={props.type} className={styles.button} onClick={props.onClick}>
+      {props.children}
+    </button>
+  );
+};
+  
+  ```
