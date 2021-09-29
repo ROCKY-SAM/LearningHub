@@ -1,8 +1,8 @@
 # packages
 > - https://styled-components.com
 > - https://create-react-app.dev/docs/adding-a-css-modules-stylesheet/
-
 > - https://medium.com/devinder/react-virtual-dom-vs-real-dom-23749ff7adc9
+> - https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en
 
 # Virtual DOM
 The Virtual DOM is a light-weight abstraction of the DOM. You can think of it as a copy of the DOM, that can be updated without affecting the actual DOM. It has all the same properties as the real DOM object, but doesn’t have the ability to write to the screen like the real DOM. The virtual DOM gains it’s speed and efficiency from the fact that it’s lightweight. In fact, a new virtual DOM is created after every re-render.
