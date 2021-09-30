@@ -1,4 +1,4 @@
-# packages
+# Packages
 > - https://styled-components.com
 > - https://create-react-app.dev/docs/adding-a-css-modules-stylesheet/
 > - https://medium.com/devinder/react-virtual-dom-vs-real-dom-23749ff7adc9
@@ -31,7 +31,91 @@ React implements a heuristic O(n) algorithm based on two assumptions:
 * Two elements of different types will produce different trees.
 * The developer can hint at which child elements may be stable across different renders with a key prop.
 
+# JSX Limitation 
+> * you cant return more than one "root" JSX element(you also cant store more than one root JSX element in a variabel)
+> * if we have two or more elements we can use Array instead of wrapping it with HTML tag, but if we use array then we need to add key prop to every array element 
+> * In bigger apps you can easliy end up with tons of unnecessary <div>s (or other elements) which add no semantic meaning or structer to the page but are only there because of React's/JSX requirement
+> * So that's simply more convenient and therefore typically we use the wrapping div. However with the wrapping div or generally any wrapping element a new problem arises. Now we can end up with div soup. So we can end up with a real DOM that's being rendered where you have many nested React Components and all those Components for various reasons need wrapping divs or have wrapping Components. And you have all these unnecessary divs being rendered into real DOM even though they're only there because of this requirement or this limitation of JSX. And this is not an unrealistic scenario. In bigger applications It's very possible that in your final HTML page which is being served to your end-users you have a lot of unnecessary divs or other elements which are only there because you needed them as wrappers even though they don't add any semantic or structural meaning to your page. Now of course you don't have to care about that you might be fine with that but it could break your styling. If you have a wrapping div somewhere and you use nested CSS selectors that div could break stylings. And even if it doesn't break your styling it's still not a good practice. You're rendering too many HTML elements and ultimately that also makes your application slower because the browser needs to render all those elements and React needs to check all those elements or at least some of those elements if content needs to change. So rendering unnecessary content is generally never a good idea in programming. Hence this wrapping div or this wrapping element approach is okay but not ideal.
 
+ > ## to solve this issue we can create a wrapper component just return props. children to reduce unwanted HTML wrapping tags and to fulfill JSX requirements 
+  ```
+  const Wrapper = props =>{
+    return props.children
+  }
+  export default Wrapper;
+  ```
+  
+> ## React Fragments
+  ```
+  <React.Fragment></React.Fragment>
+  or 
+  <></>
+  or 
+  import React,{useState,Fragment} from 'react';
+  <Fragment></Fragment>
+  ```
+> ## React Portals
+![image](https://user-images.githubusercontent.com/12700182/135516883-a06290a6-ee2e-4d08-a1bd-8aac16e5f64f.png)
+![image](https://user-images.githubusercontent.com/12700182/135516912-9a55dd40-dbb3-4357-aa01-12ef8692b9f5.png)
+  we can achive this using react portals
+![image](https://user-images.githubusercontent.com/12700182/135516943-4193c7d1-6a6c-48de-9b49-505a96ee019b.png)
+ ```
+  index.html
+      <div id="backdrop-root"></div> 
+      <div id="overlay-root"></div>
+      <div id="root"></div>
+ Model.js
+  
+import ReactDom from "react-dom";
+const Backdrop = (props) => {
+  return <div className={classes.backdrop} onClick={props.onConfirm}></div>;
+};
+const ModalOverlay = (props) => {
+  return (
+    <Card className={classes.modal}>
+      <header className={classes.header}>
+        <h2>{props.title}</h2>
+        <div className={classes.content}>
+          <p>{props.message}</p>
+        </div>
+        <footer className={classes.action}>
+          <Button onClick={props.onConfirm}>Okay</Button>
+        </footer>
+      </header>
+    </Card>
+  );
+};
+
+const ErrorModal = (props) => {
+  return (
+    <React.Fragment>
+      {ReactDom.createPortal(
+        <Backdrop onConfirm={props.onConfirm} />,
+        document.getElementById("backdrop-root")
+      )}
+
+      {ReactDom.createPortal(
+        <ModalOverlay
+          title={props.title}
+          message={props.message}
+          onConfirm={props.onConfirm}
+        />,
+        document.getElementById("overlay-root")
+      )}
+    </React.Fragment>
+  );
+};
+export default ErrorModal;
+
+ ```
+> result in web
+<img width="353" alt="image" src="https://user-images.githubusercontent.com/12700182/135518998-3bc4db6c-3bf2-45a2-958c-8299aeade98a.png">
+
+#ref's
+> References but the name in React is just ref,
+> What do refs do? they allow us to get access to other DOM elements and work with them.
+  
+  
 # Diffing Algorithm
 React first compares the two root elements. The behavior is different depending on the types of the root elements.
 
@@ -116,9 +200,13 @@ const element = React.createElement(
 };
   ```
 >These objects are called “React elements”. You can think of them as descriptions of what you want to see on the screen. React reads these objects and uses them to construct the DOM and keep it up to date.
+
   
+  
+ 
 Dynamic styling 
-  ``` <div className={`form-control ${!isValid ? 'invalid':''}`}> 
+```
+  <div className={`form-control ${!isValid ? 'invalid':''}`}> 
   
   & input {
   display: block;
@@ -140,5 +228,7 @@ const Button = props => {
   );
 };
   
-        <div className={`${style['form-control']} ${!isValid && style.invalid}`}>
-  ```
+<div className={`${style['form-control']} ${!isValid && style.invalid}`}>
+
+```
+          
