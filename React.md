@@ -115,7 +115,25 @@ export default ErrorModal;
 > References but the name in React is just ref,
 > What do refs do? they allow us to get access to other DOM elements and work with them.
   
-  
+ 
+# What are React controlled components and uncontrolled components?
+This relates to stateful DOM components (form elements) and the React docs explain the difference:
+
+* A Controlled Component is one that takes its current value through props and notifies changes through callbacks like onChange. A parent component "controls" it by handling the callback and managing its own state and passing the new values as props to the controlled component. You could also call this a "dumb component".
+ 
+* A Uncontrolled Component is one that stores its own state internally, and you query the DOM using a ref to find its current value when you need it. This is a bit more like traditional HTML.
+
+Most native React form components support both controlled and uncontrolled usage:
+```
+// Controlled:
+<input type="text" value={value} onChange={handleChange} />
+
+// Uncontrolled:
+<input type="text" defaultValue="foo" ref={inputRef} />
+// Use `inputRef.current.value` to read the current value of <input>
+```
+
+ 
 # Diffing Algorithm
 React first compares the two root elements. The behavior is different depending on the types of the root elements.
 
@@ -231,4 +249,16 @@ const Button = props => {
 <div className={`${style['form-control']} ${!isValid && style.invalid}`}>
 
 ```
-          
+ 
+ 
+# useEffect
+ ![image](https://user-images.githubusercontent.com/12700182/135762039-72fa0c50-705b-41e8-bed9-251e750f2e50.png)
+## What does useEffect do? 
+ > By using this Hook, you tell React that your component needs to do something after render. React will remember the function you passed (we’ll refer to it as our “effect”), and call it later after performing the DOM updates. In this effect, we set the document title, but we could also perform data fetching or call some other imperative API.
+
+## Why is useEffect called inside a component? 
+ > Placing useEffect inside the component lets us access the count state variable (or any props) right from the effect. We don’t need a special API to read it — it’s already in the function scope. Hooks embrace JavaScript closures and avoid introducing React-specific APIs where JavaScript already provides a solution.
+
+## Does useEffect run after every render? 
+ > Yes! By default, it runs both after the first render and after every update. Instead of thinking in terms of “mounting” and “updating”, you might find it easier to think that effects happen “after render”. React guarantees the DOM has been updated by the time it runs the effects.
+
