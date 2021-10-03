@@ -310,3 +310,20 @@ In this example:
 - myTimer is NOT added as a dependency because it's not a component-internal variable (i.e. not some state or a prop value) - it's defined outside of the component and changing it (no matter where) wouldn't cause the component to be re-evaluated
 
 - setTimeout is NOT added as a dependency because it's a built-in API (built-into the browser) - it's independent from React and your components, it doesn't change
+
+$ Effect cleanup functions
+
+React performs the cleanup when the component unmounts. The useEffect hook is built in a way that if we return a function within the method, it gets executed when the component unmounts.
+```
+useEffect(() => {
+  // This is the effect itself.
+  return () => {
+    // This is its cleanup.
+  };
+});
+ ```
+Until React 17, the useEffect cleanup mechanism used to run during commit phase. This implies that when a component is unmounting, React would execute the cleanup functions and then update the screen. It is similar to the behavior of componentWillUnmount in classes.
+
+This is not ideal for larger apps because it slows down large screen transitions (e.g., switching tabs).
+
+In React 17, the useEffect cleanup functions are delayed till the commit phase is completed. In other words, the useEffect cleanup functions run asynchronously - for example, if the component is unmounting, the cleanup runs after the screen has been updated. Additionally, React 17 will always execute all effect cleanup functions (for all components) before it runs any new effects.
