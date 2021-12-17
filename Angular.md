@@ -23,7 +23,7 @@
 > - https://pkief.medium.com/angular-desktop-apps-a9ce9e3574e8
 > - https://www.logicflow.ai/blog/params/post/2543411/
 > - https://www.geeksforgeeks.org/whats-the-difference-between-ng-pristine-and-ng-dirty-in-angularjs/
-> 
+> - https://newbedev.com/how-to-find-the-invalid-controls-in-angular-4-reactive-form
 
 
 
